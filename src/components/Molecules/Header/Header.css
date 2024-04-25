@@ -1,0 +1,27 @@
+.header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+  font-size: 12px;
+}
+
+.hamburguer,
+.search,
+.language {
+  height: 15px;
+}
+
+.search-language {
+  display: flex;
+  gap: 15px;
+}
+
+.language {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}

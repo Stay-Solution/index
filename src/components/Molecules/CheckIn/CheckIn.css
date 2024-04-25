@@ -1,0 +1,86 @@
+.filters {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.3);
+  position: absolute;
+  bottom: -123px;
+}
+
+.filter {
+  padding: 10px 20px;
+  width: 150px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  border-bottom: 1px solid #b7b7b7;
+}
+
+.title {
+  font-weight: 200;
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  color: #b7b7b7;
+}
+
+.info {
+  color: #000000;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  margin-top: 5px;
+  max-width: 115px;
+}
+
+.arrow {
+  font-size: 10px;
+}
+
+.divider {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.book p {
+  display: flex;
+  justify-content: center;
+  background-color: #b5913e;
+  padding: 15px;
+  font-weight: 600;
+  font-size: 22px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+/* Estilos específicos para o datepicker */
+.react-datepicker-wrapper {
+  padding: 10px 20px;
+  width: 150px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  border-bottom: 1px solid #b7b7b7;
+}
+
+.react-datepicker__input-container input {
+  font-family: 'Open Sans', sans-serif; /* Utilize a mesma fonte do estilo global */
+  border: none; /* Remova a borda padrão do input */
+  outline: none; /* Remova o contorno ao focar no input */
+  background-color: transparent; /* Faça o input transparente para herdar a cor de fundo do wrapper */
+  width: 100%; /* Garanta que o input ocupe toda a largura do contêiner */
+  box-sizing: border-box; /* Inclua a largura da borda e o preenchimento no tamanho total */
+  padding: 0; /* Remova o preenchimento padrão */
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.react-datepicker__input-container .react-datepicker__close-icon {
+  display: none; /* Oculte o ícone de fechar, se aplicável */
+}

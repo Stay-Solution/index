@@ -1,0 +1,41 @@
+.card {
+  background-color: #f8f8f8;
+  box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+}
+
+.card-title {
+  color: #CFCFCF;
+  font-size: 12px;
+  font-family: "Merriweather", serif;
+  z-index: 1;
+}
+
+.card-text {
+  font-size: 21px;
+  color: #B5913E;
+  font-weight: 700;
+  z-index: 1;
+}
+
+.card-learn-more {
+  cursor: pointer;
+  color: #000000;
+  font-size: 12px;
+  font-weight: 700;
+  z-index: 1;
+}
+
+.card img {
+  width: 190px;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  z-index: 0;
+  opacity: 0.6;
+}

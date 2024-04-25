@@ -1,0 +1,51 @@
+.footer-container {
+  background-color: #121315;
+  display: flex;
+  gap: 40px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-footer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-hotel-name {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: 'Merriweather', serif;
+  margin-top: 10px;
+}
+
+.footer-hotel-logo {
+  height: 40px;
+}
+
+.right-footer {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+
+.footer-link {
+  font-size: 14px;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 300;
+}
+
+.footer-rights {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 300;
+  margin-top: 20px;
+  font-family: 'Merriweather', serif;
+}
