@@ -1,6 +1,7 @@
-import { Text } from '../..';
+import { ITranslation } from "src/types";
+import { Text } from "../..";
 
-const FourthSection = ({translations}) => {
+const FourthSection: React.FC<IFourthSectionProps> = ({ translations }) => {
   return (
     <div className="fourth-section container top-spacing">
       <div className="benefits-cards">
@@ -17,3 +18,7 @@ const FourthSection = ({translations}) => {
 };
 
 export default FourthSection;
+
+export interface IFourthSectionProps {
+  translations: ITranslation;
+}

@@ -1,6 +1,7 @@
-import { Map, Text } from '../..';
+import { ITranslation } from "src/types";
+import { Map, Text } from "../..";
 
-const SixthSection = ({translations}) => {
+const SixthSection: React.FC<ISixthSectionProps> = ({ translations }) => {
   return (
     <div className="sixth-section container top-spacing">
       <div className="location">
@@ -30,10 +31,17 @@ const SixthSection = ({translations}) => {
           text={`E-mail: ${translations.sixth_section.email}`}
           className="location-data"
         />
-        <Map lat={translations.sixth_section.lat} lng={translations.sixth_section.lng} />
+        <Map
+          lat={translations.sixth_section.lat}
+          lng={translations.sixth_section.lng}
+        />
       </div>
     </div>
   );
 };
 
 export default SixthSection;
+
+export interface ISixthSectionProps {
+  translations: ITranslation;
+}

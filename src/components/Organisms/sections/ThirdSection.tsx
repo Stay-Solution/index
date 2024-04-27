@@ -1,6 +1,7 @@
-import { Button, Text } from '../..';
+import { ITranslation } from "src/types";
+import { Button, Text } from "../..";
 
-const ThirdSection = ({translations}) => {
+const ThirdSection: React.FC<IThirdSectionProps> = ({ translations }) => {
   return (
     <div className="third-section container top-spacing">
       <div className="learn-more">
@@ -15,7 +16,7 @@ const ThirdSection = ({translations}) => {
           className="learn-more-text"
         />
         <Button
-          onClick={() => ''}
+          onClick={() => ""}
           text={translations.third_section.learn_more.btn_text}
           className="learn-more-btn"
         />
@@ -25,3 +26,7 @@ const ThirdSection = ({translations}) => {
 };
 
 export default ThirdSection;
+
+export interface IThirdSectionProps {
+  translations: ITranslation;
+}

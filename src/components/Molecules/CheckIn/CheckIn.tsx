@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 
-import './CheckIn.css';
+import "./CheckIn.css";
 
 const CheckIn = () => {
   const [startDate, setStartDate] = useState(new Date());
@@ -13,7 +13,10 @@ const CheckIn = () => {
           <p className="title">CHECK-IN</p>
         </div>
         <div className="divider">
-          <DatePicker selected={startDate} onChange={(date: React.SetStateAction<Date>) => setStartDate(date)} />
+          <DatePicker
+            selected={startDate}
+            onChange={(date: Date) => setStartDate(date)}
+          />
           {/* <p className="info">Sex, 27 de Ago</p>
           <p className="arrow">▼</p> */}
         </div>
@@ -23,7 +26,10 @@ const CheckIn = () => {
           <p className="title">CHECK-OUT</p>
         </div>
         <div className="divider">
-          <DatePicker selected={startDate} onChange={(date: React.SetStateAction<Date>) => setStartDate(date)} />
+          <DatePicker
+            selected={startDate}
+            onChange={(date: Date) => setStartDate(date)}
+          />
           {/* <p className="info">Dom, 29 de Ago</p>
           <p className="arrow">▼</p> */}
         </div>

@@ -1,8 +1,7 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
-import { Carousel, Text } from '../..';
+import { ITranslation } from "src/types";
+import { Carousel, Text } from "../..";
 
-const FifthSection = ({translations}) => {
-
+const FifthSection: React.FC<IFifthSectionProps> = ({ translations }) => {
   return (
     <div className="fifth-section container top-spacing">
       <div className="hotel-content">
@@ -18,13 +17,15 @@ const FifthSection = ({translations}) => {
         />
         <Text
           as="a"
-          text={'Explore'}
+          text={"Explore"}
           className="hotel-content-explore"
-          href={'/'}
+          href={"/"}
         />
         <Carousel
           className="hotel-content-carousel"
-          slides={translations.fifth_section.carousel.map((item) => item.imgUrl)}
+          slides={translations.fifth_section.carousel.map(
+            (item) => item.imgUrl
+          )}
         />
       </div>
     </div>
@@ -32,3 +33,7 @@ const FifthSection = ({translations}) => {
 };
 
 export default FifthSection;
+
+export interface IFifthSectionProps {
+  translations: ITranslation;
+}

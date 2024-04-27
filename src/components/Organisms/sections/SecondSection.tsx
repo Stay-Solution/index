@@ -1,6 +1,7 @@
-import { Card } from '../..';
+import { ITranslation } from "src/types";
+import { Card } from "../..";
 
-const SecondSection = ({translations}) => {
+const SecondSection: React.FC<ISecondSectionProps> = ({ translations }) => {
   return (
     <div className="second-section container">
       <div className="cards">
@@ -19,3 +20,7 @@ const SecondSection = ({translations}) => {
 };
 
 export default SecondSection;
+
+export interface ISecondSectionProps {
+  translations: ITranslation;
+}

@@ -1,6 +1,7 @@
-import { Header, Text, Button, CheckIn } from '../..';
+import { ITranslation } from "src/types";
+import { Header, Text, Button, CheckIn } from "../..";
 
-const FirstSection = ({translations}) => {
+const FirstSection: React.FC<IFirstSectionProps> = ({ translations }) => {
   return (
     <div className="first-section">
       <div className="container">
@@ -22,7 +23,7 @@ const FirstSection = ({translations}) => {
             className="hotel-info-subtitle"
           />
           <Button
-            onClick={() => ''}
+            onClick={() => ""}
             text="About Us"
             className="hotel-info-about-us"
           />
@@ -34,3 +35,7 @@ const FirstSection = ({translations}) => {
 };
 
 export default FirstSection;
+
+export interface IFirstSectionProps {
+  translations: ITranslation;
+}
