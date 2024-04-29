@@ -3,7 +3,7 @@ import { Map, Text } from "../..";
 
 const SixthSection: React.FC<ISixthSectionProps> = ({ translations }) => {
   return (
-    <div className="sixth-section container top-spacing">
+    <div className="sixth-section container top-spacing-2">
       <div className="location">
         <Text as="h2" text={`Location`} className="location-title" />
         <Text
