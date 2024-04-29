@@ -2,17 +2,16 @@
   padding: 30px;
 }
 
+.top-spacing, .top-spacing-2 {
+  margin-top: 80px;
+}
+
 @media (min-width: 768px){
   .container {
     padding: 80px;
   }
-}
-
-
-.top-spacing {
-  margin-top: 80px;
-}
-
-.top-spacing-2 {
-  margin-top: 800px;
+  
+  .top-spacing-2 {
+    margin-top: 800px;
+  }
 }

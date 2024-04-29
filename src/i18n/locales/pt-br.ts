@@ -1,3 +1,5 @@
+import { ITranslation } from "src/types";
+
 // Configuração JSON com as variáveis incluídas
 const hotel_name = "Dewanagara Resort";
 const hotel_logo = "./assets/hotelLogo.png";
@@ -42,16 +44,19 @@ const translations = {
         text: "Highland Villa and Stunning Natural View",
         title: "ROOM & VILLA",
         imgUrl: "./assets/hotel-card.png",
+        redirect: "/index/quarto?id=1",
       },
       {
         text: "Calm Coffee and Delicious Food",
         title: "CAFFEE & RESTAURANT",
         imgUrl: "./assets/food-card.png",
+        redirect: "/index/quarto?id=2",
       },
       {
         text: "Hiling Your Emotion with Nursery & Agriculture",
         title: "NURSERY & AGRICULTURE",
         imgUrl: "./assets/salad-card.png",
+        redirect: "/index/quarto?id=3",
       },
     ],
   },
@@ -131,7 +136,7 @@ const translations = {
   },
   base_rooms: [
     {
-      id: 1,
+      id: "1",
       name: "zimmer-frei-quartos-vagos quarto 1",
       people: 2,
       rooms: 1,
@@ -139,15 +144,50 @@ const translations = {
       price: 890,
       promotional_price_out_season: 890,
       reserved_date: ["11-04-2024", "12-04-2024", "12-04-2024"],
-      data_page: {},
+      bookUrl:
+        "https://book.securebookings.net/roomrate?id=46377b96-de9e-1704397075-40bc-8194-a38ca36983c5&lang=br",
+      data_page: {
+        name: "Zimmer Frei - Quarto 1",
+        descriptions: [
+          "No conceito de uma grande casa, alugamos os quartos vagos. Nessa modalidade os quartos não possuem cozinha, porém temos uma cozinha na area comum da nossa grande casa, incluindo um forno elétrico e micro-ondas para o preparo de pratos rápidos ou congelados, ou ainda recomendamos conhecer os restaurantes da região que são um charme a parte.",
+          "Vale lembrar que como são aluguel de quartos, não possuímos nenhum tipo de serviços de hotel ou pousada, e o aconchego é de uma grande casa. No Zimmer Frei você pode usufruir da mesma área comum, com a Mercearia, horta, redário, Lounge deck, fogo de chão e vários decks na propriedade."
+        ],
+        additionals: [
+          "Cama de casal",
+          "Cama de solteiro",
+          "TV 28 polegadas",
+          "Frigobar",
+          "Lareira",
+          "Banheiro",
+        ],
+        validity: "17-12-2024",
+        observations: [
+          "Preço (casal)  para finais de semana, duas diárias.",
+          "Sexta a Domingo",
+          "Com café da manhã incluso.",
+          "Feriados e datas comemorativas tarifário diferenciado (consultar)",
+          "Preços podem sofrer alterações sem aviso prévio;",
+        ],
+        extras: [
+          "DIÁRIA (até 12 anos): R$ 90,00",
+          "DIÁRIA (acima de 12 anos): R$ 130,00",
+        ],
+        images: [
+          "./assets/room-img-1.png",
+          "./assets/room-img-2.png",
+          "./assets/room-img-3.png",
+          "./assets/room-img-4.png",
+        ],
+      },
       data_card: {
         text: "Highland Villa and Stunning Natural View",
         title: "ROOM & VILLA",
         imgUrl: "./assets/hotel-card.png",
+        url: "/index/quarto?id=1",
       },
     },
     {
-      id: 2,
+      id: "2",
       name: "zimmer-frei-quartos-vagos quarto 1",
       people: 2,
       rooms: 1,
@@ -160,10 +200,11 @@ const translations = {
         text: "Calm Coffee and Delicious Food",
         title: "CAFFEE & RESTAURANT",
         imgUrl: "./assets/food-card.png",
+        url: "/index/quarto?id=2",
       },
     },
     {
-      id: 3,
+      id: "3",
       name: "zimmer-frei-quartos-vagos quarto 1",
       people: 2,
       rooms: 1,
@@ -176,11 +217,12 @@ const translations = {
         text: "Hiling Your Emotion with Nursery & Agriculture",
         title: "NURSERY & AGRICULTURE",
         imgUrl: "./assets/salad-card.png",
+        url: "/index/quarto?id=3",
       },
     },
   ],
-};
+} as ITranslation;
 
 export default {
-  translations
-}
+  translations,
+};

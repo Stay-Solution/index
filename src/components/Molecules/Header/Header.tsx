@@ -1,17 +1,27 @@
-import React from 'react';
-import HamburguerIcon from '@assets/hamburger-icon.svg';
+import React from "react";
+import HamburguerIcon from "@assets/hamburger-icon.svg";
 // import SearchIcon from '../../assets/search-icon.svg';
-import GlobeIcon from '@assets/globe-icon.svg';
+import GlobeIcon from "@assets/globe-icon.svg";
 
-import './Header.css';
+import "./Header.css";
+import { useNavigate } from "react-router-dom";
 
-const Header: React.FC<IHeaderProps> = () => {
+const Header: React.FC<IHeaderProps> = ({ className }) => {
+  const navigate = useNavigate();
 
-  const redirectToHome = () =>{ console.log("go to home")}
+  const redirectToHome = () => {
+    navigate('/index/');
+  };
+
   return (
     <>
-      <div className="header-container">
-        <img src={HamburguerIcon} alt="/" className="hamburguer" onClick={redirectToHome} />
+      <div className={`header-container ${className ? className : ''}`}>
+        <img
+          src={HamburguerIcon}
+          alt="/"
+          className="hamburguer"
+          onClick={redirectToHome}
+        />
         <div className="search-language">
           {/* <img src={SearchIcon} alt="/" className="search" /> */}
           <div className="language">
@@ -27,5 +37,5 @@ const Header: React.FC<IHeaderProps> = () => {
 export default Header;
 
 interface IHeaderProps {
-  // openSidebar: () => void;
+  className?: string;
 }

@@ -1,12 +1,17 @@
-import React from 'react';
-import './Card.css';
+import React from "react";
+import "./Card.css";
+import { useNavigate } from "react-router-dom";
 
 const Card: React.FC<ICard> = ({ title, text, imgUrl, link }) => {
+  const navigate = useNavigate();
+
   return (
     <div className="card">
       <p className="card-title">{title}</p>
       <p className="card-text">{text}</p>
-      <p className="card-learn-more" onClick={() => window.open(link, '_blank')}>Learn More</p>
+      <p className="card-learn-more" onClick={() => navigate(link)}>
+        Learn More
+      </p>
       <img src={imgUrl} alt="" />
     </div>
   );

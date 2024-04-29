@@ -15,7 +15,7 @@ export default Text;
 
 interface ITextProps {
   as: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'p' | 'span' | 'a';
-  text: string;
+  text: string | JSX.Element;
   className?: string;
   style?: React.CSSProperties;
   title?: string

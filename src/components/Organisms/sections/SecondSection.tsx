@@ -11,7 +11,7 @@ const SecondSection: React.FC<ISecondSectionProps> = ({ translations }) => {
             title={card.title}
             text={card.text}
             imgUrl={card.imgUrl}
-            link=""
+            link={card.redirect}
           />
         ))}
       </div>

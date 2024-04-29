@@ -7,7 +7,7 @@ const router = createBrowserRouter([
     element: <Home />,
   },
   {
-    path: '/quarto',
+    path: '/index/quarto',
     element: <Quartos />,
   },
 ]);
