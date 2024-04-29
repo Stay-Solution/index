@@ -11,7 +11,7 @@ import { Contato } from "@components/index";
 import { Footer } from "@components/index";
 import { getIdFromQueryString } from "@utils/getIdFromQueryString";
 
-import "./Quartos.css";
+// import "./Quartos.css";
 import locales from "../../i18n/locales";
 
 const Quartos = () => {

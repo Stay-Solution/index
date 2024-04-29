@@ -81,6 +81,15 @@
   gap: 20px;
 }
 
+@media (min-width: 768px){
+  .cards {
+      flex-direction: row;
+      flex-wrap: wrap; /* Permite que as divs internas quebrem para uma nova linha quando não couberem mais */
+      gap: 20px;
+      justify-content: center;
+  }
+}
+
 /* THIRD SECTION */
 .learn-more-title {
   font-size: 30px;
