@@ -33,7 +33,7 @@ const translations = {
     home: {
       text: "home",
       title: "ROOM & VILLA",
-      imgUrl: "./src/assets/hotel-card.png",
+      imgUrl: "./public/assets/hotel-card.png",
     },
   },
   second_section: {
@@ -41,12 +41,12 @@ const translations = {
       {
         text: "Highland Villa and Stunning Natural View",
         title: "ROOM & VILLA",
-        imgUrl: "./src/assets/hotel-card.png",
+        imgUrl: "./public/assets/hotel-card.png",
       },
       {
         text: "Calm Coffee and Delicious Food",
         title: "CAFFEE & RESTAURANT",
-        imgUrl: "./src/assets/food-card.png",
+        imgUrl: "./public/assets/food-card.png",
       },
       {
         text: "Hiling Your Emotion with Nursery & Agriculture",
