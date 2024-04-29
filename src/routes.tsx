@@ -3,7 +3,7 @@ import { Home, Quartos } from './screens';
 
 const router = createBrowserRouter([
   {
-    path: '/',
+    path: '/index/',
     element: <Home />,
   },
   {
