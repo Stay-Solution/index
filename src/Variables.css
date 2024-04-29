@@ -2,6 +2,13 @@
   padding: 30px;
 }
 
+@media (min-width: 768px){
+  .container {
+    padding: 80px;
+  }
+}
+
+
 .top-spacing {
   margin-top: 80px;
 }

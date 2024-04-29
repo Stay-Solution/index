@@ -128,6 +128,14 @@
   gap: 40px;
 }
 
+@media (min-width: 768px){
+  .benefits-cards {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+  }
+}
+
 .benefit-card {
   padding: 30px;
   background-color: #f8f8f8f8;
