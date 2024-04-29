@@ -1,6 +1,6 @@
 // Configuração JSON com as variáveis incluídas
 const hotel_name = "Dewanagara Resort";
-const hotel_logo = "./src/assets/hotel_logo.png";
+const hotel_logo = "./assets/hotelLogo.png";
 const hotel_phone = "+62 361 300 7000";
 const hotel_phone_cleaned = "623613007000";
 const hotel_email = "randomemail@email.com";
@@ -33,7 +33,7 @@ const translations = {
     home: {
       text: "home",
       title: "ROOM & VILLA",
-      imgUrl: "./public/assets/hotel-card.png",
+      imgUrl: "./assets/hotel-card.png",
     },
   },
   second_section: {
@@ -41,17 +41,17 @@ const translations = {
       {
         text: "Highland Villa and Stunning Natural View",
         title: "ROOM & VILLA",
-        imgUrl: "./public/assets/hotel-card.png",
+        imgUrl: "./assets/hotel-card.png",
       },
       {
         text: "Calm Coffee and Delicious Food",
         title: "CAFFEE & RESTAURANT",
-        imgUrl: "./public/assets/food-card.png",
+        imgUrl: "./assets/food-card.png",
       },
       {
         text: "Hiling Your Emotion with Nursery & Agriculture",
         title: "NURSERY & AGRICULTURE",
-        imgUrl: "./src/assets/salad-card.png",
+        imgUrl: "./assets/salad-card.png",
       },
     ],
   },
@@ -67,22 +67,22 @@ const translations = {
       {
         title: "Late Checkout",
         text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
-        imgUrl: "./src/assets/late-checkout.svg",
+        imgUrl: "./assets/late-checkout.svg",
       },
       {
         title: "Flexible Cancellation",
         text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
-        imgUrl: "./src/assets/calendar-check.svg",
+        imgUrl: "./assets/calendar-check.svg",
       },
       {
         title: "Best Rate Guarateed",
         text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
-        imgUrl: "./src/assets/shield-check-icon.svg",
+        imgUrl: "./assets/shield-check-icon.svg",
       },
       {
         title: "Best Price",
         text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
-        imgUrl: "./src/assets/best-price.svg",
+        imgUrl: "./assets/best-price.svg",
       },
     ],
   },
@@ -91,19 +91,19 @@ const translations = {
     text: "Timeless Indian Ocean views are maximidez along the cliff front, with unmatched sunsets, blossoming gardens, and 24/7 buttler service.",
     carousel: [
       {
-        imgUrl: "./src/assets/hotel-carousel1.jpg",
+        imgUrl: "./assets/hotel-carousel1.jpg",
       },
       {
-        imgUrl: "./src/assets/hotel-carousel3.jpg",
+        imgUrl: "./assets/hotel-carousel3.jpg",
       },
       {
-        imgUrl: "./src/assets/hotel-carousel1.jpg",
+        imgUrl: "./assets/hotel-carousel1.jpg",
       },
       {
-        imgUrl: "./src/assets/hotel-carousel3.jpg",
+        imgUrl: "./assets/hotel-carousel3.jpg",
       },
       {
-        imgUrl: "./src/assets/hotel-carousel1.jpg",
+        imgUrl: "./assets/hotel-carousel1.jpg",
       },
     ],
   },
@@ -143,7 +143,7 @@ const translations = {
       data_card: {
         text: "Highland Villa and Stunning Natural View",
         title: "ROOM & VILLA",
-        imgUrl: "./src/assets/hotel-card.png",
+        imgUrl: "./assets/hotel-card.png",
       },
     },
     {
@@ -159,7 +159,7 @@ const translations = {
       data_card: {
         text: "Calm Coffee and Delicious Food",
         title: "CAFFEE & RESTAURANT",
-        imgUrl: "./src/assets/food-card.png",
+        imgUrl: "./assets/food-card.png",
       },
     },
     {
@@ -175,7 +175,7 @@ const translations = {
       data_card: {
         text: "Hiling Your Emotion with Nursery & Agriculture",
         title: "NURSERY & AGRICULTURE",
-        imgUrl: "./src/assets/salad-card.png",
+        imgUrl: "./assets/salad-card.png",
       },
     },
   ],
