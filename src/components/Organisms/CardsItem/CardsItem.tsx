@@ -2,7 +2,7 @@ import { Text } from "../..";
 // import { IBaseRoom } from "src/types";
 const CardsItem: React.FC<CardsItemProps> = ({ additionals2 }) => {
   return (
-    <div className="fourth-section container top-spacing">
+    <div className="fourth-section container ">
       <div className="benefits-cards">
         {additionals2.card.map((item) => (
           <div className="benefit-card">
