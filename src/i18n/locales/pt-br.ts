@@ -14,6 +14,65 @@ const hotel_lat = -27.44043830690196;
 const hotel_lng = -48.38389974602489;
 const google_map_key = "AIzaSyCoIs9PHsryA2eXgnj4uXgl0XEksfMfWlg";
 
+const hotel_rooms_options = [
+  {
+    text: "Zimmer Frei - Quarto 1",
+    title: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
+    imgUrl: "./assets/hotel-card.png",
+    redirect: "/index/quarto?id=1",
+    people: 2,
+    rooms: 1,
+  },
+  {
+    text: "Zimmer Frei - Quarto 2",
+    title: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
+    imgUrl: "./assets/food-card.png",
+    redirect: "/index/quarto?id=2",
+    people: 2,
+    rooms: 1,
+  },
+  {
+    text: "Zimmer Frei - Quarto 3",
+    title: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
+    imgUrl: "./assets/salad-card.png",
+    redirect: "/index/quarto?id=3",
+    people: 2,
+    rooms: 1,
+  },
+  {
+    text: "Teste 3 quartos",
+    title: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
+    imgUrl: "./assets/salad-card.png",
+    redirect: "/index/quarto?id=3",
+    people: 2,
+    rooms: 3,
+  },
+  {
+    text: "Teste 3 quartos 2 pessoas",
+    title: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
+    imgUrl: "./assets/salad-card.png",
+    redirect: "/index/quarto?id=3",
+    people: 2,
+    rooms: 3,
+  },
+  {
+    text: "Teste 3 quartos 1 pessoa",
+    title: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
+    imgUrl: "./assets/salad-card.png",
+    redirect: "/index/quarto?id=3",
+    people: 1,
+    rooms: 3,
+  },
+  {
+    text: "Teste 2 quartos 2 pessoas",
+    title: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
+    imgUrl: "./assets/salad-card.png",
+    redirect: "/index/quarto?id=3",
+    people: 2,
+    rooms: 2,
+  },
+]
+
 const translations = {
   google_map_key: google_map_key,
   year: 2024,
@@ -39,26 +98,7 @@ const translations = {
     },
   },
   second_section: {
-    cards: [
-      {
-        text: "Zimmer Frei - Quarto 1",
-        title: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
-        imgUrl: "./assets/hotel-card.png",
-        redirect: "/index/quarto?id=1",
-      },
-      {
-        text: "Zimmer Frei - Quarto 2",
-        title: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
-        imgUrl: "./assets/food-card.png",
-        redirect: "/index/quarto?id=2",
-      },
-      {
-        text: "Zimmer Frei - Quarto 3",
-        title: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
-        imgUrl: "./assets/salad-card.png",
-        redirect: "/index/quarto?id=3",
-      },
-    ],
+    cards: hotel_rooms_options,
   },
   third_section: {
     learn_more: {
