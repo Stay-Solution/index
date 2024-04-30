@@ -5,7 +5,7 @@ import {
   FifthSection,
   SixthSection,
 } from "@components/Organisms/sections";
-import { Carousel, Contato, Text, CardsItem, Header } from "@components/index";
+import { Carousel, Contato, Text, CardsItem } from "@components/index";
 import { Footer } from "@components/index";
 import { getIdFromQueryString } from "@utils/getIdFromQueryString";
 
