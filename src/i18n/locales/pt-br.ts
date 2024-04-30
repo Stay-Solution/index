@@ -41,20 +41,20 @@ const translations = {
   second_section: {
     cards: [
       {
-        text: "Highland Villa and Stunning Natural View",
-        title: "ROOM & VILLA",
+        text: "Zimmer Frei - Quarto 1",
+        title: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
         imgUrl: "./assets/hotel-card.png",
         redirect: "/index/quarto?id=1",
       },
       {
-        text: "Calm Coffee and Delicious Food",
-        title: "CAFFEE & RESTAURANT",
+        text: "Zimmer Frei - Quarto 2",
+        title: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
         imgUrl: "./assets/food-card.png",
         redirect: "/index/quarto?id=2",
       },
       {
-        text: "Hiling Your Emotion with Nursery & Agriculture",
-        title: "NURSERY & AGRICULTURE",
+        text: "Zimmer Frei - Quarto 3",
+        title: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
         imgUrl: "./assets/salad-card.png",
         redirect: "/index/quarto?id=3",
       },
@@ -214,8 +214,8 @@ const translations = {
         ],
       },
       data_card: {
-        text: "Highland Villa and Stunning Natural View",
-        title: "ROOM & VILLA",
+        text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
+        title: "Zimmer Frei - Quarto 1",
         imgUrl: "./assets/hotel-card.png",
         url: "/index/quarto?id=1",
       },
@@ -232,7 +232,7 @@ const translations = {
       bookUrl:
         "https://book.securebookings.net/roomrate?id=46377b96-de9e-1704397075-40bc-8194-a38ca36983c5&lang=br",
       data_page: {
-        name: "Zimmer Frei - Quarto 1",
+        name: "Zimmer Frei - Quarto 2",
         descriptions: [
           "No conceito de uma grande casa, alugamos os quartos vagos. Nessa modalidade os quartos não possuem cozinha, porém temos uma cozinha na area comum da nossa grande casa, incluindo um forno elétrico e micro-ondas para o preparo de pratos rápidos ou congelados, ou ainda recomendamos conhecer os restaurantes da região que são um charme a parte.",
           "Vale lembrar que como são aluguel de quartos, não possuímos nenhum tipo de serviços de hotel ou pousada, e o aconchego é de uma grande casa. No Zimmer Frei você pode usufruir da mesma área comum, com a Mercearia, horta, redário, Lounge deck, fogo de chão e vários decks na propriedade."
@@ -299,8 +299,8 @@ const translations = {
         ],
       },
       data_card: {
-        text: "Highland Villa and Stunning Natural View",
-        title: "ROOM & VILLA",
+        text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
+        title: "Zimmer Frei - Quarto 2",
         imgUrl: "./assets/hotel-card.png",
         url: "/index/quarto?id=2",
       },
@@ -317,7 +317,7 @@ const translations = {
       bookUrl:
         "https://book.securebookings.net/roomrate?id=46377b96-de9e-1704397075-40bc-8194-a38ca36983c5&lang=br",
       data_page: {
-        name: "Zimmer Frei - Quarto 1",
+        name: "Zimmer Frei - Quarto 3",
         descriptions: [
           "No conceito de uma grande casa, alugamos os quartos vagos. Nessa modalidade os quartos não possuem cozinha, porém temos uma cozinha na area comum da nossa grande casa, incluindo um forno elétrico e micro-ondas para o preparo de pratos rápidos ou congelados, ou ainda recomendamos conhecer os restaurantes da região que são um charme a parte.",
           "Vale lembrar que como são aluguel de quartos, não possuímos nenhum tipo de serviços de hotel ou pousada, e o aconchego é de uma grande casa. No Zimmer Frei você pode usufruir da mesma área comum, com a Mercearia, horta, redário, Lounge deck, fogo de chão e vários decks na propriedade."
@@ -384,8 +384,8 @@ const translations = {
         ],
       },
       data_card: {
-        text: "Highland Villa and Stunning Natural View",
-        title: "ROOM & VILLA",
+        text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
+        title: "Zimmer Frei - Quarto 3",
         imgUrl: "./assets/hotel-card.png",
         url: "/index/quarto?id=3",
       },

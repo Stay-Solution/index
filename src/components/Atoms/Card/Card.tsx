@@ -6,10 +6,10 @@ const Card: React.FC<ICard> = ({ title, text, imgUrl, link }) => {
   const navigate = useNavigate();
 
   return (
-    <div className="card">
+    <div className="card" onClick={() => navigate(link)}>
       <p className="card-title">{title}</p>
       <p className="card-text">{text}</p>
-      <p className="card-learn-more" onClick={() => navigate(link)}>
+      <p className="card-learn-more">
         Learn More
       </p>
       <img src={imgUrl} alt="" />
