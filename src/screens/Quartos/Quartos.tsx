@@ -5,7 +5,7 @@ import {
   FifthSection,
   SixthSection,
 } from "@components/Organisms/sections";
-import { Carousel, Contato, Header, Text } from "@components/index";
+import { Carousel, Contato, Header, Text, CardsItem } from "@components/index";
 import { Footer } from "@components/index";
 import { getIdFromQueryString } from "@utils/getIdFromQueryString";
 
@@ -61,12 +61,13 @@ const Quartos = () => {
           ))}
         </div>
 
-        <div className="room-details">
+        <div className="container room-details">
           <div className="room-details-item">
-            <Text as="span" text="Details" className="room-details-title" />
-            {roomData.data_page.additionals.map((add) => (
+            <Text as="h2" text="Details" className="room-details-title" />
+            {/* {roomData.data_page.additionals.map((add) => (
               <Text as="p" text={add} className="room-additional" />
-            ))}
+            ))} */}
+            <CardsItem additionals2={roomData.data_page.additionals2} />
           </div>
         </div>
         <ThirdSection translations={translations} />

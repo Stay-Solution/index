@@ -90,6 +90,13 @@ export interface IBaseRoom {
     name: string;
     descriptions: Array<string>;
     additionals: Array<string>;
+    additionals2: {
+      card: {
+        title: string;
+        text: string;
+        imgUrl: string;
+      }[];
+    };
     validity?: string;
     observations: Array<string>;
     extras: Array<string>;

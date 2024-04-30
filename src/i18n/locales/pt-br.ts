@@ -160,6 +160,40 @@ const translations = {
           "Lareira",
           "Banheiro",
         ],
+        additionals2: {
+          card: [
+            {
+              title: "Cama de casal",
+              text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
+              imgUrl: "./assets/late-checkout.svg",
+            },
+            {
+              title: "Cama de solteiro",
+              text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
+              imgUrl: "./assets/calendar-check.svg",
+            },
+            {
+              title: "TV 28 polegadas",
+              text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
+              imgUrl: "./assets/shield-check-icon.svg",
+            },
+            {
+              title: "Frigobar",
+              text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
+              imgUrl: "./assets/best-price.svg",
+            },
+            {
+              title: "Lareira",
+              text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
+              imgUrl: "./assets/best-price.svg",
+            },
+            {
+              title: "Banheiro",
+              text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
+              imgUrl: "./assets/best-price.svg",
+            },
+          ],
+        },
         validity: "17-12-2024",
         observations: [
           "Preço (casal)  para finais de semana, duas diárias.",

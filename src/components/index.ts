@@ -12,3 +12,4 @@ export { default as Footer } from './Molecules/Footer/Footer';
 export { default as Carousel } from './Organisms/Carousel/Carousel';
 export { default as Map } from './Organisms/Map/Map';
 export { default as Contato } from './Organisms/Contato/Contato';
+export { default as CardsItem } from './Organisms/CardsItem/CardsItem';
