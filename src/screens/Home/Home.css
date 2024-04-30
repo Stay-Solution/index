@@ -163,6 +163,12 @@
   height: 455px;
 }
 
+@media (min-width: 768px){
+  .fifth-section {
+    height: auto;
+  }
+}
+
 .hotel-content-title {
   font-size: 30px;
   font-family: 'Merriweather', serif;
