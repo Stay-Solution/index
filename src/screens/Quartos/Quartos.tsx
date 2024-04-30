@@ -52,8 +52,8 @@ const Quartos = () => {
   return (
     <>
       <div className="main-container">
-        <Header className="room-page-header container" />
-        {/* <Text as="h2" text={roomData.data_page.name} className="room-name" /> */}
+        {/* <Header className="room-page-header container" /> */}
+        <Text as="h2" text={roomData.data_page.name} className="room-name" />
         <Carousel slides={carouselTemporary} />
         <div className="room-presentation container">
           {roomData.data_page.descriptions.map((desc) => (
@@ -63,7 +63,7 @@ const Quartos = () => {
 
         <div className="container room-details">
           <div className="room-details-item">
-            <Text as="h2" text="Details" className="room-details-title" />
+            <Text as="h2" text="Informações gerais" className="room-details-title" />
             {/* {roomData.data_page.additionals.map((add) => (
               <Text as="p" text={add} className="room-additional" />
             ))} */}
