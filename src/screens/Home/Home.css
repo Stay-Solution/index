@@ -87,6 +87,7 @@
       flex-wrap: wrap; /* Permite que as divs internas quebrem para uma nova linha quando não couberem mais */
       gap: 20px;
       justify-content: center;
+      width: 100%;
   }
 }
 

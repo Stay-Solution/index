@@ -70,7 +70,7 @@
 }
 
 .react-datepicker__input-container input {
-  font-family: 'Open Sans', sans-serif; /* Utilize a mesma fonte do estilo global */
+  font-family: "Open Sans", sans-serif; /* Utilize a mesma fonte do estilo global */
   border: none; /* Remova a borda padrão do input */
   outline: none; /* Remova o contorno ao focar no input */
   background-color: transparent; /* Faça o input transparente para herdar a cor de fundo do wrapper */
@@ -79,8 +79,32 @@
   padding: 0; /* Remova o preenchimento padrão */
   font-size: 14px;
   font-weight: bold;
+  text-align: center;
 }
 
 .react-datepicker__input-container .react-datepicker__close-icon {
   display: none; /* Oculte o ícone de fechar, se aplicável */
+}
+
+/* Select and Select element with id = quartos */
+select#quartos,
+select#adultos {
+  font-family: "Open Sans", sans-serif;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0;
+  font-size: 14px;
+  font-weight: bold;
+  display: flex;
+  padding: 10px 20px;
+  border-bottom: 1px solid #b7b7b7;
+  text-align: center;
+
+  /* Remove a arrow do select */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }

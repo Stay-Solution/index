@@ -10,8 +10,8 @@
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "predeploy" : "yarn run build",
-    "deploy" : "gh-pages -d dist"
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@react-google-maps/api": "^2.19.3",
@@ -31,6 +31,7 @@
     "use-places-autocomplete": "^4.0.1"
   },
   "devDependencies": {
+    "@types/node": "^20.12.7",
     "@types/react": "^18.2.66",
     "@types/react-datepicker": "^6.2.0",
     "@types/react-dom": "^18.2.22",

@@ -1,22 +1,21 @@
-import { useState } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 
 import "./CheckIn.css";
+import { useRoomsContext } from "@contexts/index";
 
 const CheckIn = () => {
-  const [numQuartos, setNumQuartos] = useState(1);
-  const [numAdultos, setNumAdultos] = useState(1);
-  const [startDate, setStartDate] = useState(new Date());
+  const { roomFilters, setRoomFilters } = useRoomsContext();
 
   // Funções para lidar com mudanças nos selects
   const handleQuartosChange = (event: { target: { value: string; }; }) => {
-    setNumQuartos(parseInt(event.target.value));
+    setRoomFilters("rooms", parseInt(event.target.value));
   };
 
   const handleAdultosChange = (event: { target: { value: string; }; }) => {
-    setNumAdultos(parseInt(event.target.value));
+    setRoomFilters("people", parseInt(event.target.value));
   };
+
   return (
     <div className="filters">
       <div className="filter">
@@ -25,8 +24,8 @@ const CheckIn = () => {
         </div>
         <div className="divider">
           <DatePicker
-            selected={startDate}
-            onChange={(date: Date) => setStartDate(date)}
+            selected={roomFilters.startDate}
+            onChange={(date: Date) => setRoomFilters("startDate", date)}
           />
           {/* <p className="info">Sex, 27 de Ago</p>
           <p className="arrow">▼</p> */}
@@ -38,8 +37,8 @@ const CheckIn = () => {
         </div>
         <div className="divider">
           <DatePicker
-            selected={startDate}
-            onChange={(date: Date) => setStartDate(date)}
+            selected={roomFilters.endDate}
+            onChange={(date: Date) => setRoomFilters("endDate", date)}
           />
           {/* <p className="info">Dom, 29 de Ago</p>
           <p className="arrow">▼</p> */}
@@ -52,7 +51,7 @@ const CheckIn = () => {
           <p className="title">QUARTOS</p>
         </div>
         <div className="divider">
-          <select id="quartos" value={numQuartos} onChange={handleQuartosChange}>
+          <select id="quartos" value={roomFilters.rooms} onChange={handleQuartosChange}>
             <option value="1">1 Quarto</option>
             <option value="2">2 Quartos</option>
             <option value="3">3 Quartos</option>
@@ -66,7 +65,7 @@ const CheckIn = () => {
           <p className="title">HÓSPEDES</p>
         </div>
         <div className="divider">
-          <select id="adultos" value={numAdultos} onChange={handleAdultosChange}>
+          <select id="adultos" value={roomFilters.people} onChange={handleAdultosChange}>
             <option value="1">1 Adulto</option>
             <option value="2">2 Adultos</option>
             <option value="3">3 Adultos</option>

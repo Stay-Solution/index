@@ -28,6 +28,8 @@ export interface ITranslation {
       title: string;
       imgUrl: string;
       redirect: string;
+      rooms: number;
+      people: number;
     }[];
   };
   third_section: {

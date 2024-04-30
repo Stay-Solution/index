@@ -1,11 +1,19 @@
 import { ITranslation } from "src/types";
 import { Card } from "../..";
+import { useRoomsContext } from "@contexts/RoomsContext";
 
 const SecondSection: React.FC<ISecondSectionProps> = ({ translations }) => {
+  const { roomFilters} = useRoomsContext();
+
+  const filteredRooms = translations.second_section.cards.filter((room) => {
+    return room.people === roomFilters.people && room.rooms === roomFilters.rooms;
+  
+  })
+
   return (
     <div className="second-section container">
       <div className="cards">
-        {translations.second_section.cards.map((card, index) => (
+        {filteredRooms.map((card, index) => (
           <Card
             key={index}
             title={card.title}
@@ -14,6 +22,7 @@ const SecondSection: React.FC<ISecondSectionProps> = ({ translations }) => {
             link={card.redirect}
           />
         ))}
+        {filteredRooms.length === 0 && <p>Nenhum quarto disponível</p>}
       </div>
     </div>
   );

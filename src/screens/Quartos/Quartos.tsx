@@ -5,7 +5,7 @@ import {
   FifthSection,
   SixthSection,
 } from "@components/Organisms/sections";
-import { Carousel, Contato, Text, CardsItem } from "@components/index";
+import { Carousel, Contato, Text, CardsItem, Header } from "@components/index";
 import { Footer } from "@components/index";
 import { getIdFromQueryString } from "@utils/getIdFromQueryString";
 
@@ -52,8 +52,8 @@ const Quartos = () => {
   return (
     <>
       <div className="main-container">
-        {/* <Header className="room-page-header container" /> */}
-        <Text as="h2" text={roomData.data_page.name} className="room-name" />
+        <Header className="room-page-header container" />
+        {/* <Text as="h2" text={roomData.data_page.name} className="room-name" /> */}
         <Carousel slides={carouselTemporary} />
         <div className="room-presentation container">
           {roomData.data_page.descriptions.map((desc) => (
