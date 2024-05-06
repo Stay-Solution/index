@@ -14,6 +14,65 @@ const hotel_lat = -27.44043830690196;
 const hotel_lng = -48.38389974602489;
 const google_map_key = "AIzaSyCoIs9PHsryA2eXgnj4uXgl0XEksfMfWlg";
 
+const hotel_rooms_options = [
+  {
+    text: "Zimmer Frei - Quarto 1",
+    title: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
+    imgUrl: "./assets/hotel-card.png",
+    redirect: "/index/quarto?id=1",
+    people: 2,
+    rooms: 1,
+  },
+  {
+    text: "Zimmer Frei - Quarto 2",
+    title: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
+    imgUrl: "./assets/food-card.png",
+    redirect: "/index/quarto?id=2",
+    people: 2,
+    rooms: 1,
+  },
+  {
+    text: "Zimmer Frei - Quarto 3",
+    title: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
+    imgUrl: "./assets/salad-card.png",
+    redirect: "/index/quarto?id=3",
+    people: 2,
+    rooms: 1,
+  },
+  {
+    text: "Teste 3 quartos",
+    title: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
+    imgUrl: "./assets/salad-card.png",
+    redirect: "/index/quarto?id=3",
+    people: 2,
+    rooms: 3,
+  },
+  {
+    text: "Teste 3 quartos 2 pessoas",
+    title: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
+    imgUrl: "./assets/salad-card.png",
+    redirect: "/index/quarto?id=3",
+    people: 2,
+    rooms: 3,
+  },
+  {
+    text: "Teste 3 quartos 1 pessoa",
+    title: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
+    imgUrl: "./assets/salad-card.png",
+    redirect: "/index/quarto?id=3",
+    people: 1,
+    rooms: 3,
+  },
+  {
+    text: "Teste 2 quartos 2 pessoas",
+    title: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
+    imgUrl: "./assets/salad-card.png",
+    redirect: "/index/quarto?id=3",
+    people: 2,
+    rooms: 2,
+  },
+]
+
 const translations = {
   google_map_key: google_map_key,
   year: 2024,
@@ -39,26 +98,7 @@ const translations = {
     },
   },
   second_section: {
-    cards: [
-      {
-        text: "Highland Villa and Stunning Natural View",
-        title: "ROOM & VILLA",
-        imgUrl: "./assets/hotel-card.png",
-        redirect: "/index/quarto?id=1",
-      },
-      {
-        text: "Calm Coffee and Delicious Food",
-        title: "CAFFEE & RESTAURANT",
-        imgUrl: "./assets/food-card.png",
-        redirect: "/index/quarto?id=2",
-      },
-      {
-        text: "Hiling Your Emotion with Nursery & Agriculture",
-        title: "NURSERY & AGRICULTURE",
-        imgUrl: "./assets/salad-card.png",
-        redirect: "/index/quarto?id=3",
-      },
-    ],
+    cards: hotel_rooms_options,
   },
   third_section: {
     learn_more: {
@@ -160,6 +200,40 @@ const translations = {
           "Lareira",
           "Banheiro",
         ],
+        additionals2: {
+          card: [
+            {
+              title: "Cama de casal",
+              text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
+              imgUrl: "./assets/late-checkout.svg",
+            },
+            {
+              title: "Cama de solteiro",
+              text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
+              imgUrl: "./assets/calendar-check.svg",
+            },
+            {
+              title: "TV 28 polegadas",
+              text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
+              imgUrl: "./assets/shield-check-icon.svg",
+            },
+            {
+              title: "Frigobar",
+              text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
+              imgUrl: "./assets/best-price.svg",
+            },
+            {
+              title: "Lareira",
+              text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
+              imgUrl: "./assets/best-price.svg",
+            },
+            {
+              title: "Banheiro",
+              text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
+              imgUrl: "./assets/best-price.svg",
+            },
+          ],
+        },
         validity: "17-12-2024",
         observations: [
           "Preço (casal)  para finais de semana, duas diárias.",
@@ -180,43 +254,179 @@ const translations = {
         ],
       },
       data_card: {
-        text: "Highland Villa and Stunning Natural View",
-        title: "ROOM & VILLA",
+        text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
+        title: "Zimmer Frei - Quarto 1",
         imgUrl: "./assets/hotel-card.png",
         url: "/index/quarto?id=1",
       },
     },
     {
       id: "2",
-      name: "zimmer-frei-quartos-vagos quarto 1",
+      name: "zimmer-frei-quartos-vagos quarto 2",
       people: 2,
       rooms: 1,
       full_space: false,
       price: 890,
       promotional_price_out_season: 890,
       reserved_date: ["11-04-2024", "12-04-2024", "12-04-2024"],
-      data_page: {},
+      bookUrl:
+        "https://book.securebookings.net/roomrate?id=46377b96-de9e-1704397075-40bc-8194-a38ca36983c5&lang=br",
+      data_page: {
+        name: "Zimmer Frei - Quarto 2",
+        descriptions: [
+          "No conceito de uma grande casa, alugamos os quartos vagos. Nessa modalidade os quartos não possuem cozinha, porém temos uma cozinha na area comum da nossa grande casa, incluindo um forno elétrico e micro-ondas para o preparo de pratos rápidos ou congelados, ou ainda recomendamos conhecer os restaurantes da região que são um charme a parte.",
+          "Vale lembrar que como são aluguel de quartos, não possuímos nenhum tipo de serviços de hotel ou pousada, e o aconchego é de uma grande casa. No Zimmer Frei você pode usufruir da mesma área comum, com a Mercearia, horta, redário, Lounge deck, fogo de chão e vários decks na propriedade."
+        ],
+        additionals: [
+          "Cama de casal",
+          "Cama de solteiro",
+          "TV 28 polegadas",
+          "Frigobar",
+          "Lareira",
+          "Banheiro",
+        ],
+        additionals2: {
+          card: [
+            {
+              title: "Cama de casal",
+              text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
+              imgUrl: "./assets/late-checkout.svg",
+            },
+            {
+              title: "Cama de solteiro",
+              text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
+              imgUrl: "./assets/calendar-check.svg",
+            },
+            {
+              title: "TV 28 polegadas",
+              text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
+              imgUrl: "./assets/shield-check-icon.svg",
+            },
+            {
+              title: "Frigobar",
+              text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
+              imgUrl: "./assets/best-price.svg",
+            },
+            {
+              title: "Lareira",
+              text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
+              imgUrl: "./assets/best-price.svg",
+            },
+            {
+              title: "Banheiro",
+              text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
+              imgUrl: "./assets/best-price.svg",
+            },
+          ],
+        },
+        validity: "17-12-2024",
+        observations: [
+          "Preço (casal)  para finais de semana, duas diárias.",
+          "Sexta a Domingo",
+          "Com café da manhã incluso.",
+          "Feriados e datas comemorativas tarifário diferenciado (consultar)",
+          "Preços podem sofrer alterações sem aviso prévio;",
+        ],
+        extras: [
+          "DIÁRIA (até 12 anos): R$ 90,00",
+          "DIÁRIA (acima de 12 anos): R$ 130,00",
+        ],
+        images: [
+          "./assets/room-img-1.png",
+          "./assets/room-img-2.png",
+          "./assets/room-img-3.png",
+          "./assets/room-img-4.png",
+        ],
+      },
       data_card: {
-        text: "Calm Coffee and Delicious Food",
-        title: "CAFFEE & RESTAURANT",
-        imgUrl: "./assets/food-card.png",
+        text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
+        title: "Zimmer Frei - Quarto 2",
+        imgUrl: "./assets/hotel-card.png",
         url: "/index/quarto?id=2",
       },
     },
     {
       id: "3",
-      name: "zimmer-frei-quartos-vagos quarto 1",
+      name: "zimmer-frei-quartos-vagos quarto 3",
       people: 2,
       rooms: 1,
       full_space: false,
       price: 890,
       promotional_price_out_season: 890,
       reserved_date: ["11-04-2024", "12-04-2024", "12-04-2024"],
-      data_page: {},
+      bookUrl:
+        "https://book.securebookings.net/roomrate?id=46377b96-de9e-1704397075-40bc-8194-a38ca36983c5&lang=br",
+      data_page: {
+        name: "Zimmer Frei - Quarto 3",
+        descriptions: [
+          "No conceito de uma grande casa, alugamos os quartos vagos. Nessa modalidade os quartos não possuem cozinha, porém temos uma cozinha na area comum da nossa grande casa, incluindo um forno elétrico e micro-ondas para o preparo de pratos rápidos ou congelados, ou ainda recomendamos conhecer os restaurantes da região que são um charme a parte.",
+          "Vale lembrar que como são aluguel de quartos, não possuímos nenhum tipo de serviços de hotel ou pousada, e o aconchego é de uma grande casa. No Zimmer Frei você pode usufruir da mesma área comum, com a Mercearia, horta, redário, Lounge deck, fogo de chão e vários decks na propriedade."
+        ],
+        additionals: [
+          "Cama de casal",
+          "Cama de solteiro",
+          "TV 28 polegadas",
+          "Frigobar",
+          "Lareira",
+          "Banheiro",
+        ],
+        additionals2: {
+          card: [
+            {
+              title: "Cama de casal",
+              text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
+              imgUrl: "./assets/late-checkout.svg",
+            },
+            {
+              title: "Cama de solteiro",
+              text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
+              imgUrl: "./assets/calendar-check.svg",
+            },
+            {
+              title: "TV 28 polegadas",
+              text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
+              imgUrl: "./assets/shield-check-icon.svg",
+            },
+            {
+              title: "Frigobar",
+              text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
+              imgUrl: "./assets/best-price.svg",
+            },
+            {
+              title: "Lareira",
+              text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
+              imgUrl: "./assets/best-price.svg",
+            },
+            {
+              title: "Banheiro",
+              text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
+              imgUrl: "./assets/best-price.svg",
+            },
+          ],
+        },
+        validity: "17-12-2024",
+        observations: [
+          "Preço (casal)  para finais de semana, duas diárias.",
+          "Sexta a Domingo",
+          "Com café da manhã incluso.",
+          "Feriados e datas comemorativas tarifário diferenciado (consultar)",
+          "Preços podem sofrer alterações sem aviso prévio;",
+        ],
+        extras: [
+          "DIÁRIA (até 12 anos): R$ 90,00",
+          "DIÁRIA (acima de 12 anos): R$ 130,00",
+        ],
+        images: [
+          "https://images.pexels.com/photos/338504/pexels-photo-338504.jpeg?cs=srgb&dl=pexels-thorsten-technoman-109353-338504.jpg&fm=jpg",
+          "https://wallpaperswide.com/download/luxury_hotel-wallpaper-2560x1440.jpg",
+          "https://c4.wallpaperflare.com/wallpaper/624/380/1000/life-resort-hotel-resort-hotel-wallpaper-preview.jpg",
+          "https://wallpaperswide.com/download/hotel_room_2-wallpaper-3554x1999.jpg",
+        ],
+      },
       data_card: {
-        text: "Hiling Your Emotion with Nursery & Agriculture",
-        title: "NURSERY & AGRICULTURE",
-        imgUrl: "./assets/salad-card.png",
+        text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
+        title: "Zimmer Frei - Quarto 3",
+        imgUrl: "./assets/hotel-card.png",
         url: "/index/quarto?id=3",
       },
     },

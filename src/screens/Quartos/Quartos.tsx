@@ -40,12 +40,12 @@ const Quartos = () => {
   };
 
   // const carouselSlides = roomData ? roomData?.data_page.images.map((img) => img) : [];
-  const carouselTemporary = [
-    "./src/assets/room-img-2.png",
-    "./src/assets/room-img-3.png",
-    "./src/assets/room-img-2.png",
-    "./src/assets/room-img-3.png",
-  ];
+  // const carouselTemporary = [
+  //   "./src/assets/room-img-2.png",
+  //   "./src/assets/room-img-3.png",
+  //   "./src/assets/room-img-2.png",
+  //   "./src/assets/room-img-3.png",
+  // ];
 
   if (roomData === undefined) return <div>Loading...</div>;
 
@@ -54,7 +54,7 @@ const Quartos = () => {
       <div className="main-container">
         {/* <Header className="room-page-header container" /> */}
         <Text as="h2" text={roomData.data_page.name} className="room-name" />
-        <Carousel slides={carouselTemporary} />
+        <Carousel slides={roomData.data_page.images} />
         <div className="room-presentation container">
           {roomData.data_page.descriptions.map((desc) => (
             <Text as="p" text={desc} className="room-desc" />

@@ -417,10 +417,10 @@ const translations = {
           "DIÁRIA (acima de 12 anos): R$ 130,00",
         ],
         images: [
-          "./assets/room-img-1.png",
-          "./assets/room-img-2.png",
-          "./assets/room-img-3.png",
-          "./assets/room-img-4.png",
+          "https://images.pexels.com/photos/338504/pexels-photo-338504.jpeg?cs=srgb&dl=pexels-thorsten-technoman-109353-338504.jpg&fm=jpg",
+          "https://wallpaperswide.com/download/luxury_hotel-wallpaper-2560x1440.jpg",
+          "https://c4.wallpaperflare.com/wallpaper/624/380/1000/life-resort-hotel-resort-hotel-wallpaper-preview.jpg",
+          "https://wallpaperswide.com/download/hotel_room_2-wallpaper-3554x1999.jpg",
         ],
       },
       data_card: {
